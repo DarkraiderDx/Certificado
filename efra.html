@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado</title>
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: rgb(136, 183, 123);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            display: inline;
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        .menu li a:hover {
+            background-color: #6b9b39;
+            
+            
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                text-align: left;
+                background-color: #8ac24a;
+                position: absolute;
+                top: 58px;
+                left: 0px;
+                width: 100%;
+            }
+            .menu li {
+                display: block;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+        .contact-info {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .contact-info p {
+            margin: 5px;
+        }
+        .main-content {
+            text-align: center;
+        }
+        .main-content h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .main-content p {
+            margin: 10px 0;
+        }
+        img{
+            display: flex;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header"><br>
+            <br>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#demodiversidad">Demodiversidad</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <img src="logo.png">
+            <span><i class="fa fa-phone"></i> Teléfono: 591 - 2 - 2424221 / 2422338 <i class="fa fa-envelope-o"></i> Email: educacion@oep.org.bo</span>
+            
+        </div>
+        <div class="main-content">
+            <h2>VALIDACIÓN DE CERTIFICADO EXTENDIDO</h2>
+            <p>Se certifica que:</p>
+            <h2>EFRAIN LLAVE CHURA</h2>
+            <p>Participó en el: <strong>CURSO PERMANENTE DE NOTARIAS Y NOTARIOS 2021 (PRESENCIAL)</strong>, obteniendo una nota de 95, Por lo cual se extendió un certificado con serie <strong>EL6650379-6-2021</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
